@@ -1,0 +1,22 @@
+{
+  "name": "kemenger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrey8910/kemenger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrey8910/kemenger/issues"
+  },
+  "homepage": "https://github.com/andrey8910/kemenger#readme",
+  "dependencies": {
+    "sass": "^1.54.3"
+  }
+}
