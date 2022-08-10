@@ -11,7 +11,7 @@
   padding: 0 20px;
 }
 //._ibg {
-//  position: relative;
+//   position: relative;
 //}
 //._ibg img {
 //  position : absolute;
@@ -20,6 +20,7 @@
 //  top: 0;
 //  left: 0;
 //  object-fit: cover;
+//  z-index: 4;
 //}
 //header////////////////////////////
 
@@ -37,7 +38,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #955EEA;
     z-index: 2;
   }
 
@@ -172,4 +172,106 @@
 
 
 }
+
+//main-banner//////////////////////
+.page-main-banner {
+  position: relative;
+  height: 880px;
+  width: 100%;
+  padding: 87px 0 0 0  ;
+
+   .banner__container{
+    position: relative;
+  }
+
+  .banner-block__body {
+    padding: 184px 0 191px 0;
+    position: relative;
+    z-index: 2;
+    max-width: 664px;
+
+    .banner-block__title {
+      font-family: $font-family;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 120.83%;
+
+      & span {
+        color: $base-color-blue;
+      }
+
+    }
+
+    .banner-block__text {
+      color: #737373;
+      font-size: 24px;
+      line-height: 120.83%;
+      max-width: 532px;
+    }
+
+    .banner-block__buttons {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -10px 0;
+
+      .banner-block__button {
+        border-radius: 37px;
+        display: flex;
+        min-height: 48px;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.2px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 150%;
+        padding: 5px 36px;
+        margin: 10px 0;
+        transition: all 0.3s ease 0s;
+      }
+      .banner-block__button_yellow {
+        background: $base-color-yellow;
+        color: $base-font-color;
+
+        &:hover{
+          opacity: 0.8;
+        }
+      }
+
+
+    }
+  }
+
+  .banner-block__body > *:not(:last-child){
+    margin: 0 0 35px 0;
+  }
+
+  .main-banner__image-boy{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+  }
+
+  .main-banner__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
