@@ -1,6 +1,7 @@
 @import 'Variables/Variables';
 
 .wrapper {
+  width: 100%;
   min-height: 100%;
   font-family: $font-family;
   overflow: hidden;
@@ -242,13 +243,13 @@
   }
 
   .banner-block__body > *:not(:last-child){
-    margin: 0 0 35px 0;
+    margin: 0 0 44px 0;
   }
 
   .main-banner__image-boy{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -90px;
+    right: -80px;
     z-index: 3;
   }
 
@@ -264,14 +265,130 @@
 
 }
 
+//aboutUs=======================================================
+.aboutUs {
+  margin: 127px 0 0 0;
+  .aboutUs__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 840px;
+
+
+    .aboutUs__container_item {
+      position: relative;
+
+      .item__text-first {
+        .text-first__bg {
+          position: absolute;
+          max-width: 547px;
+          max-height: 256px;
+          top: 0;
+          right: 0;
+
+          & img {
+            width: 100%;
+          }
+        }
+        .text-first {
+          position: absolute;
+          max-width: 460px;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 122.29%;
+          top: 76px;
+          right: 30px ;
+          z-index: 2;
+        }
+      }
+
+      .item__text-last {
+        .text-last__bg {
+          position: absolute;
+          max-width: 547px;
+          max-height: 256px;
+          bottom: 0;
+          left: 0;
+
+          & img {
+            width: 100%;
+          }
+        }
+        .text-last{
+          position: absolute;
+          max-width: 460px;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 122.29%;
+          bottom: 45px;
+          left: 0;
+          z-index: 2;
+        }
+      }
+
+      .item__img-kids, .item__img-class {
+        position: absolute;
+        max-width: 488px;
+        border-radius: 30px;
+        overflow: hidden;
+
+
+
+        & img {
+          //display: block;
+          width: 100%;
+        }
+      }
+      .img-class {
+        top: 0;
+        right: 32px;
+      }
+      .img-kids {
+        bottom: 32px;
+        left: 32px;
+      }
+    }
+  }
+}
 
 
 
 
 
 
+.border__kids {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 488px;
+  height: 343px;
+  z-index: 0;
+}
+
+.border-rect__kids {
+  stroke: $base-color-blue;
+  fill: #fff;
+  stroke-width: 4;
+  stroke-dasharray: 20;
+}
 
 
+.border__class {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  width: 488px;
+  height: 343px;
+  z-index: 0;
+}
+
+.border-rect__class {
+  stroke: $base-color-blue;
+  fill: #fff;
+  stroke-width: 4;
+  stroke-dasharray: 20;
+}
 
 
 

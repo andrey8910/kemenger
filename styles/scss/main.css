@@ -1,4 +1,5 @@
 .wrapper {
+  width: 100%;
   min-height: 100%;
   font-family: "Commissioner", sans-serif;
   overflow: hidden;
@@ -203,12 +204,12 @@
   opacity: 0.8;
 }
 .page-main-banner .banner-block__body > *:not(:last-child) {
-  margin: 0 0 35px 0;
+  margin: 0 0 44px 0;
 }
 .page-main-banner .main-banner__image-boy {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -90px;
+  right: -80px;
   z-index: 3;
 }
 .page-main-banner .main-banner__image {
@@ -218,6 +219,109 @@
   top: 0;
   left: 0;
   object-fit: cover;
+}
+
+.aboutUs {
+  margin: 127px 0 0 0;
+}
+.aboutUs .aboutUs__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: 840px;
+}
+.aboutUs .aboutUs__container .aboutUs__container_item {
+  position: relative;
+}
+.aboutUs .aboutUs__container .aboutUs__container_item .item__text-first .text-first__bg {
+  position: absolute;
+  max-width: 547px;
+  max-height: 256px;
+  top: 0;
+  right: 0;
+}
+.aboutUs .aboutUs__container .aboutUs__container_item .item__text-first .text-first__bg img {
+  width: 100%;
+}
+.aboutUs .aboutUs__container .aboutUs__container_item .item__text-first .text-first {
+  position: absolute;
+  max-width: 460px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 122.29%;
+  top: 76px;
+  right: 30px;
+  z-index: 2;
+}
+.aboutUs .aboutUs__container .aboutUs__container_item .item__text-last .text-last__bg {
+  position: absolute;
+  max-width: 547px;
+  max-height: 256px;
+  bottom: 0;
+  left: 0;
+}
+.aboutUs .aboutUs__container .aboutUs__container_item .item__text-last .text-last__bg img {
+  width: 100%;
+}
+.aboutUs .aboutUs__container .aboutUs__container_item .item__text-last .text-last {
+  position: absolute;
+  max-width: 460px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 122.29%;
+  bottom: 45px;
+  left: 0;
+  z-index: 2;
+}
+.aboutUs .aboutUs__container .aboutUs__container_item .item__img-kids, .aboutUs .aboutUs__container .aboutUs__container_item .item__img-class {
+  position: absolute;
+  max-width: 488px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.aboutUs .aboutUs__container .aboutUs__container_item .item__img-kids img, .aboutUs .aboutUs__container .aboutUs__container_item .item__img-class img {
+  width: 100%;
+}
+.aboutUs .aboutUs__container .aboutUs__container_item .img-class {
+  top: 0;
+  right: 32px;
+}
+.aboutUs .aboutUs__container .aboutUs__container_item .img-kids {
+  bottom: 32px;
+  left: 32px;
+}
+
+.border__kids {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 488px;
+  height: 343px;
+  z-index: 0;
+}
+
+.border-rect__kids {
+  stroke: #018FA3;
+  fill: #fff;
+  stroke-width: 4;
+  stroke-dasharray: 20;
+}
+
+.border__class {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  width: 488px;
+  height: 343px;
+  z-index: 0;
+}
+
+.border-rect__class {
+  stroke: #018FA3;
+  fill: #fff;
+  stroke-width: 4;
+  stroke-dasharray: 20;
 }
 
 /*# sourceMappingURL=main.css.map */
