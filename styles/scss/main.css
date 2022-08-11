@@ -72,6 +72,7 @@
     width: 100%;
     height: 2px;
     top: 9px;
+    transition: all 0.3s ease 0s;
   }
   .header .header__body .header__burger:before, .header .header__body .header__burger:after {
     content: "";
@@ -80,6 +81,7 @@
     width: 100%;
     height: 2px;
     left: 0;
+    transition: all 0.3s ease 0s;
   }
   .header .header__body .header__burger:before {
     top: 0;
@@ -88,18 +90,37 @@
     bottom: 0;
   }
 }
+.header .header__body .header__burger.active:before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+.header .header__body .header__burger.active:after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+.header .header__body .header__burger.active span {
+  transform: scale(0);
+}
 .header .header__body .header__menu .header__list {
   display: flex;
+  gap: 40px;
   position: relative;
   z-index: 2;
+}
+@media (max-width: 992px) {
+  .header .header__body .header__menu .header__list {
+    gap: 30px;
+  }
+}
+@media (max-width: 860px) {
+  .header .header__body .header__menu .header__list {
+    gap: 20px;
+  }
 }
 @media (max-width: 767px) {
   .header .header__body .header__menu .header__list {
     display: block;
   }
-}
-.header .header__body .header__menu .header__list li {
-  margin: 0 0 0 40px;
 }
 @media (max-width: 767px) {
   .header .header__body .header__menu .header__list li {
@@ -118,17 +139,19 @@
 @media (max-width: 767px) {
   .header .header__body .header__menu {
     position: fixed;
-    top: 0;
+    top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: #018FA3;
     padding: 100px 10px 20px 10px;
+    transition: all 0.3s ease 0s;
   }
 }
+.header .header__body .header__menu.active {
+  top: 0;
+}
 .header .header__body .header__contact {
-  width: 196px;
-  height: 40px;
   display: flex;
   align-items: center;
   position: relative;
@@ -139,12 +162,39 @@
     order: 2;
   }
 }
+.header .header__body .header__contact img {
+  width: 30px;
+}
+@media (max-width: 992px) {
+  .header .header__body .header__contact img {
+    width: 20px;
+  }
+}
+@media (max-width: 860px) {
+  .header .header__body .header__contact img {
+    width: 15px;
+  }
+}
 .header .header__body .header__contact .header__phone {
   font-size: 18px;
   font-weight: 600;
   line-height: 81.81%;
   color: #000000;
   margin: 0 0 0 8px;
+}
+@media (max-width: 992px) {
+  .header .header__body .header__contact .header__phone {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 0 6px;
+  }
+}
+@media (max-width: 860px) {
+  .header .header__body .header__contact .header__phone {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 0 4px;
+  }
 }
 
 .page-main-banner {
@@ -322,6 +372,72 @@
   fill: #fff;
   stroke-width: 4;
   stroke-dasharray: 20;
+}
+
+.englishLanguage {
+  grid-area: englishLanguage;
+}
+
+.trainingForSchool {
+  grid-area: trainingForSchool;
+}
+
+.superMemory {
+  grid-area: superMemory;
+}
+
+.groupExtendedDays {
+  grid-area: groupExtendedDays;
+}
+
+.centralBlock {
+  grid-area: centralBlock;
+}
+
+.aboutUs__destinations {
+  padding: 107px 0 0 0;
+}
+.aboutUs__destinations .aboutUs__destinations_block {
+  display: grid;
+  height: 720px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: "arithmetic         centralBlock        centralBlock        calligraphy" "speedReading       centralBlock        centralBlock        englishLanguage" "trainingForSchool  centralBlock        centralBlock        superMemory" "trainingForSchool  groupExtendedDays   groupExtendedDays   superMemory";
+}
+.aboutUs__destinations .aboutUs__destinations_block .destinations_block__item {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 140px;
+}
+.aboutUs__destinations .aboutUs__destinations_block .item__text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 122.29%;
+}
+.aboutUs__destinations .aboutUs__destinations_block .arithmetic {
+  position: relative;
+  grid-area: arithmetic;
+}
+.aboutUs__destinations .aboutUs__destinations_block .arithmetic .destinations_block__item {
+  right: 0;
+}
+.aboutUs__destinations .aboutUs__destinations_block .calligraphy {
+  position: relative;
+  grid-area: calligraphy;
+}
+.aboutUs__destinations .aboutUs__destinations_block .calligraphy .destinations_block__item {
+  left: 0;
+}
+.aboutUs__destinations .aboutUs__destinations_block .speedReading {
+  position: relative;
+  grid-area: speedReading;
+}
+.aboutUs__destinations .aboutUs__destinations_block .speedReading .destinations_block__item {
+  left: 20%;
+  top: 20%;
 }
 
 /*# sourceMappingURL=main.css.map */
