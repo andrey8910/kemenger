@@ -199,12 +199,14 @@
 
 .page-main-banner {
   position: relative;
-  height: 880px;
+  max-height: 860px;
   width: 100%;
   padding: 87px 0 0 0;
 }
 .page-main-banner .banner__container {
   position: relative;
+  background: left no-repeat url("/img/banner/banner-bg.png");
+  background-size: contain;
 }
 .page-main-banner .banner-block__body {
   padding: 184px 0 191px 0;
@@ -212,11 +214,42 @@
   z-index: 2;
   max-width: 664px;
 }
+@media (max-width: 1200px) {
+  .page-main-banner .banner-block__body {
+    padding: 100px 0 160px 0;
+  }
+}
+@media (max-width: 992px) {
+  .page-main-banner .banner-block__body {
+    padding: 50px 0 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  .page-main-banner .banner-block__body {
+    padding: 30px 0 80px 0;
+  }
+}
 .page-main-banner .banner-block__body .banner-block__title {
   font-family: "Commissioner", sans-serif;
   font-weight: 600;
   font-size: 48px;
   line-height: 120.83%;
+}
+@media (max-width: 1200px) {
+  .page-main-banner .banner-block__body .banner-block__title {
+    font-weight: 500;
+    font-size: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .page-main-banner .banner-block__body .banner-block__title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .page-main-banner .banner-block__body .banner-block__title {
+    font-size: 30px;
+  }
 }
 .page-main-banner .banner-block__body .banner-block__title span {
   color: #018FA3;
@@ -226,6 +259,18 @@
   font-size: 24px;
   line-height: 120.83%;
   max-width: 532px;
+}
+@media (max-width: 992px) {
+  .page-main-banner .banner-block__body .banner-block__text {
+    font-size: 20px;
+    max-width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .page-main-banner .banner-block__body .banner-block__text {
+    font-size: 18px;
+    max-width: 460px;
+  }
 }
 .page-main-banner .banner-block__body .banner-block__buttons {
   display: flex;
@@ -258,17 +303,21 @@
 }
 .page-main-banner .main-banner__image-boy {
   position: absolute;
+  width: 60%;
+  height: 120%;
+  background: url("/img/banner/boy.png") right no-repeat;
+  background-size: contain;
   top: -90px;
   right: -80px;
-  z-index: 3;
+  z-index: 1;
 }
 .page-main-banner .main-banner__image {
   position: absolute;
   width: 100%;
   height: 100%;
+  background-size: contain;
   top: 0;
   left: 0;
-  object-fit: cover;
 }
 
 .aboutUs {

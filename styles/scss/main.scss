@@ -229,12 +229,18 @@
 //main-banner//////////////////////
 .page-main-banner {
   position: relative;
-  height: 880px;
+  max-height: 860px;
   width: 100%;
   padding: 87px 0 0 0  ;
 
+  @media (max-width: 1200px){
+    //max-height: 460px;
+  }
+
    .banner__container{
-    position: relative;
+     position: relative;
+     background: left  no-repeat url("/img/banner/banner-bg.png");
+     background-size: contain;
   }
 
   .banner-block__body {
@@ -243,11 +249,32 @@
     z-index: 2;
     max-width: 664px;
 
+    @media (max-width: 1200px){
+      padding: 100px 0 160px 0;
+    }
+    @media (max-width: 992px){
+      padding: 50px 0 100px 0;
+    }
+    @media (max-width: 767px){
+      padding: 30px 0 80px 0;
+    }
+
     .banner-block__title {
       font-family: $font-family;
       font-weight: 600;
       font-size: 48px;
       line-height: 120.83%;
+
+      @media (max-width: 1200px){
+        font-weight: 500;
+        font-size: 40px;
+      }
+      @media (max-width: 992px){
+        font-size: 35px;
+      }
+      @media (max-width: 767px){
+        font-size: 30px;
+      }
 
       & span {
         color: $base-color-blue;
@@ -260,6 +287,15 @@
       font-size: 24px;
       line-height: 120.83%;
       max-width: 532px;
+
+      @media (max-width: 992px){
+        font-size: 20px;
+        max-width: 500px;
+      }
+      @media (max-width: 767px){
+        font-size: 18px;
+        max-width: 460px;
+      }
     }
 
     .banner-block__buttons {
@@ -300,18 +336,29 @@
 
   .main-banner__image-boy{
     position: absolute;
+    width: 60%;
+    height: 120%;
+    background : url('/img/banner/boy.png') right no-repeat;
+    background-size: contain;
+
+    //max-height: 100%;
     top: -90px;
     right: -80px;
-    z-index: 3;
+    z-index: 1;
+
+
+
   }
 
   .main-banner__image {
     position: absolute;
     width: 100%;
     height: 100%;
+    //background: center  no-repeat url("/img/banner/banner-bg.png");
+    background-size: contain;
     top: 0;
     left: 0;
-    object-fit: cover;
+    //object-fit: cover;
   }
 
 
