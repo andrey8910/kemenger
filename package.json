@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/andrey8910/kemenger#readme",
   "dependencies": {
-    "sass": "^1.54.3"
+    "sass": "^1.54.4"
   }
 }
