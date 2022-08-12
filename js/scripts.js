@@ -8,3 +8,4 @@ headerBurger.addEventListener("click", function() {
     headerBurger.classList.toggle('active');
     headerMenu.classList.toggle('active');
 });
+
