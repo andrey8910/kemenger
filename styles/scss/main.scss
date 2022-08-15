@@ -11,6 +11,25 @@
   margin: 0 auto;
   padding: 0 40px;
 }
+
+.base-color-blue {
+  background-color: $base-color-blue;
+}
+.base-color-purple {
+  background-color: $base-color-purple;
+}
+.base-color-green {
+  background-color: $base-color-green;
+}
+.base-color-yellow {
+  background-color: $base-color-yellow;
+}
+.base-color-pink {
+  background-color: $base-color-pink;
+}
+.base-color-orange {
+  background-color: $base-color-orange;
+}
 //._ibg {
 //   position: relative;
 //}
@@ -336,7 +355,7 @@
 
   .main-banner__image-boy{
     position: absolute;
-    width: 60%;
+    width: 100%;
     height: 120%;
     background : url('/img/banner/boy.png') right no-repeat;
     background-size: contain;
@@ -799,28 +818,107 @@
 }
 .mySwiper {
   width: 100%;
-  height: 780px;
+  min-height: 780px;
 
 
 
   .swiper-slide {
     display: flex;
     font-size: 18px;
-    background: rosybrown;
     flex-direction: column;
     justify-content: space-between;
+    background: #FFFFFF;
     border-radius: 30px;
+    //box-shadow: 0px 52px 34px -27px rgba(225, 225, 225, 0.15);
     overflow: hidden;
 
     .slide__header {
+      display: flex;
       width: 100%;
       height: 80px;
-      background-color: $base-color-blue;
+      align-items: center;
+      justify-content: center;
+
+      .slide__title{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+      }
 
     }
     .slide__body{
-      flex: 1 1 auto;
+     // flex: 1 1 auto;
       width: 100%;
+
+      .slide__body_header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        padding: 60px 0;
+
+        .header__body-slide_title {
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 58.7px;
+          padding-bottom: 20px;
+        }
+
+        .header__body-slide_age {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 29px;
+        }
+
+        .header__body-slide_lessons {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 29px;
+          text-align: center;
+        }
+      }
+
+      .slide__body_items {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        font-size: 24px;
+        font-weight: 400;
+        //line-height: 29.32;
+        text-align: center;
+
+        #item1__slide, {
+          display: none;
+        }
+        #item2__slide {
+          display: none;
+        }
+        #item3__slide {
+          display: none;
+        }
+      }
+    }
+    .slide__button_block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 0;
+
+      .slide__button {
+        display: flex;
+        height: 58px;
+        padding: 20px 60px;
+        align-items: center;
+        border-radius: 40px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29.35px
+      }
+
     }
 
   }
