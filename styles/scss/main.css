@@ -6,7 +6,7 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -845,6 +845,163 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 29.35px;
+}
+
+.certificates {
+  width: 100%;
+  height: 440px;
+  background: url("/img/certificates/certificates_bg.png") top no-repeat;
+}
+.certificates .certificates__header {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 60px;
+}
+.certificates .certificates__items {
+  display: flex;
+  gap: 10px;
+  margin-top: 60px;
+}
+.certificates .certificates__items .item__image {
+  height: 200px;
+  overflow: hidden;
+}
+.certificates .certificates__items .item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviews .reviews__header {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.7px;
+  text-align: center;
+}
+.reviews .reviews__slider_block {
+  margin: 60px 0;
+}
+.reviews .reviews__slider_block .myReviewsSwiper {
+  width: 100%;
+  height: 284px;
+}
+.reviews .reviews__slider_block .myReviewsSwiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  border: 4px solid #018FA3;
+  border-radius: 30px;
+  padding: 28px;
+}
+.reviews .reviews__slider_block .myReviewsSwiper .swiper-wrapper .swiper-slide .slide__reviews_title {
+  display: flex;
+  gap: 20px;
+  text-align: left;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.35px;
+  padding-bottom: 12px;
+}
+.reviews .reviews__slider_block .myReviewsSwiper .swiper-wrapper .swiper-slide .slide__reviews_text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.46px;
+  text-align: left;
+}
+.reviews .reviews__slider_block .myReviewsSwiper .swiper-button-prev, .reviews .reviews__slider_block .myReviewsSwiper .swiper-button-next {
+  color: #000000;
+}
+
+.contacts {
+  width: 100%;
+}
+.contacts .contacts__container .contacts__block {
+  position: relative;
+  height: 654px;
+  background: url("/img/contacts/bg_3.png") no-repeat;
+  background-size: contain;
+}
+.contacts .contacts__container .contacts__block .contacts__block_address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  width: 590px;
+  height: 540px;
+  background-color: #018FA3;
+  top: 134px;
+  border-radius: 30px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.35px;
+  padding: 12px 40px 38px 40px;
+}
+.contacts .contacts__container .contacts__block .contacts__block_address .contacts__title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 58.7px;
+  text-align: center;
+}
+.contacts .contacts__container .contacts__block .contacts__block_address .contacts__date {
+  font-weight: 400;
+  padding-top: 8px;
+}
+.contacts .contacts__container .contacts__block .contacts__block_address a.contacts__date {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.contacts .contacts__container .contacts__map .contacts__map_container {
+  padding: 72px 0;
+}
+.contacts .contacts__container .contacts__map .contacts__map_container .map__block {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+  background: url("/img/contacts/bg_2.png") center no-repeat;
+}
+.contacts .contacts__container .contacts__map .contacts__map_container .map__block .map__contacts {
+  width: 794px;
+  height: 539px;
+  background: url("/img/contacts/map.jpg") no-repeat;
+  background-size: contain;
+  border-radius: 20px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #0A2530;
+}
+.footer .footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+.footer .footer__container .footer__logo {
+  width: 102px;
+  height: 88px;
+  overflow: hidden;
+}
+.footer .footer__container .footer__menu .footer__menu_items {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer .footer__container .footer__menu .footer__menu_items .item__menu {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.35px;
+  color: #fff;
+}
+.footer .footer__container .footer__lable {
+  width: 157px;
+  height: 51px;
 }
 
 /*# sourceMappingURL=main.css.map */
