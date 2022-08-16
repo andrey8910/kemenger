@@ -91,7 +91,7 @@
   }
   .header .header__body .header__burger span {
     position: absolute;
-    background-color: #fff;
+    background-color: #000000;
     left: 0;
     width: 100%;
     height: 2px;
@@ -100,7 +100,7 @@
   }
   .header .header__body .header__burger:before, .header .header__body .header__burger:after {
     content: "";
-    background-color: #fff;
+    background-color: #000000;
     position: absolute;
     width: 100%;
     height: 2px;
@@ -167,7 +167,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #018FA3;
+    background-color: #fff;
     padding: 100px 10px 20px 10px;
     transition: all 0.3s ease 0s;
   }
@@ -176,9 +176,6 @@
   top: 0;
 }
 .header .header__body .header__contact {
-  display: flex;
-  align-items: center;
-  position: relative;
   z-index: 2;
 }
 @media (max-width: 767px) {
@@ -186,28 +183,23 @@
     order: 2;
   }
 }
-.header .header__body .header__contact img {
-  width: 30px;
-}
-@media (max-width: 992px) {
-  .header .header__body .header__contact img {
-    width: 20px;
-  }
-}
-@media (max-width: 860px) {
-  .header .header__body .header__contact img {
-    width: 15px;
-  }
-}
 .header .header__body .header__contact .header__phone {
+  display: flex;
+  justify-content: right;
+  height: 40px;
   font-size: 18px;
   font-weight: 600;
   line-height: 81.81%;
   color: #000000;
-  margin: 0 0 0 8px;
+  align-items: center;
+  padding-left: 48px;
+  background: url("/img/header/icon/phone.svg") left no-repeat;
+  background-size: contain;
 }
 @media (max-width: 992px) {
   .header .header__body .header__contact .header__phone {
+    height: 30px;
+    padding-left: 38px;
     font-size: 16px;
     font-weight: 500;
     margin: 0 0 0 6px;
@@ -215,9 +207,17 @@
 }
 @media (max-width: 860px) {
   .header .header__body .header__contact .header__phone {
+    height: 25px;
+    padding-left: 30px;
     font-size: 14px;
     font-weight: 400;
     margin: 0 0 0 4px;
+  }
+}
+@media (max-width: 767px) {
+  .header .header__body .header__contact .header__phone {
+    height: 20px;
+    padding-left: 28px;
   }
 }
 
@@ -253,6 +253,11 @@
     padding: 30px 0 80px 0;
   }
 }
+@media (max-width: 640px) {
+  .page-main-banner .banner-block__body {
+    padding: 0 0 80px 0;
+  }
+}
 .page-main-banner .banner-block__body .banner-block__title {
   font-family: "Commissioner", sans-serif;
   font-weight: 600;
@@ -279,7 +284,6 @@
   color: #018FA3;
 }
 .page-main-banner .banner-block__body .banner-block__text {
-  color: #737373;
   font-size: 24px;
   line-height: 120.83%;
   max-width: 532px;
@@ -294,6 +298,11 @@
   .page-main-banner .banner-block__body .banner-block__text {
     font-size: 18px;
     max-width: 460px;
+  }
+}
+@media (max-width: 640px) {
+  .page-main-banner .banner-block__body .banner-block__text {
+    max-width: 340px;
   }
 }
 .page-main-banner .banner-block__body .banner-block__buttons {
@@ -334,6 +343,11 @@
   top: -90px;
   right: -80px;
   z-index: 1;
+}
+@media (max-width: 620px) {
+  .page-main-banner .main-banner__image-boy {
+    opacity: 0.7;
+  }
 }
 .page-main-banner .main-banner__image {
   position: absolute;

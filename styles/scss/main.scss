@@ -30,18 +30,7 @@
 .base-color-orange {
   background-color: $base-color-orange;
 }
-//._ibg {
-//   position: relative;
-//}
-//._ibg img {
-//  position : absolute;
-//  width: 100%;
-//  height: 100%;
-//  top: 0;
-//  left: 0;
-//  object-fit: cover;
-//  z-index: 4;
-//}
+
 //header////////////////////////////
 
 .header {
@@ -70,7 +59,6 @@
 
     @media (max-width:767px){
       height: 80px;
-
     }
 
     .header__logo{
@@ -100,7 +88,7 @@
 
           & span {
             position: absolute;
-            background-color: #fff;
+            background-color: $base-font-color;
             left: 0;
             width: 100%;
             height: 2px;
@@ -111,7 +99,7 @@
           &:before,
           &:after {
             content: '';
-            background-color: #fff;
+            background-color: $base-font-color;
             position: absolute;
             width: 100%;
             height: 2px;
@@ -159,8 +147,6 @@
 
 
         & li {
-         // margin: 0 0 0 0;
-
           @media (max-width:767px){
             margin: 0 0 20px 0;
           }
@@ -184,7 +170,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: $base-color-blue;
+        background-color: #fff;
         padding: 100px 10px 20px 10px;
         transition: all 0.3s ease 0s;
       }
@@ -194,55 +180,45 @@
       top: 0;
     }
     .header__contact {
-      display: flex;
-      align-items: center;
-      position: relative;
       z-index: 2;
-
-
-
-      @media (max-width: 992px){
-
-      }
-
       @media (max-width:767px){
         order: 2;
       }
 
-      & img {
-        width: 30px;
-        @media (max-width: 992px){
-          width: 20px;
-        }
-        @media (max-width: 860px){
-          width: 15px;
-        }
-
-      }
-
       .header__phone {
+        display: flex;
+        justify-content: right;
+        height: 40px;
         font-size: 18px;
         font-weight: 600;
         line-height: 81.81%;
         color: $base-font-color;
-        margin: 0 0 0 8px;
-        //background: url("img/header/icon/phone.svg") left no-repeat;
+        align-items: center;
+        padding-left: 48px;
+        background: url("/img/header/icon/phone.svg") left no-repeat;
+        background-size: contain;
 
         @media (max-width: 992px){
+          height: 30px;
+          padding-left: 38px;
           font-size: $header-font-size;
           font-weight: 500;
           margin: 0 0 0 6px;
         }
         @media (max-width: 860px){
+          height: 25px;
+          padding-left: 30px;
           font-size: 14px;
           font-weight: 400;
           margin: 0 0 0 4px;
         }
+        @media (max-width:767px){
+          height: 20px;
+          padding-left: 28px;
+        }
       }
     }
   }
-
-
 }
 
 //main-banner//////////////////////
@@ -252,9 +228,6 @@
   width: 100%;
   padding: 87px 0 0 0  ;
 
-  @media (max-width: 1200px){
-    //max-height: 460px;
-  }
 
    .banner__container{
      position: relative;
@@ -276,6 +249,9 @@
     }
     @media (max-width: 767px){
       padding: 30px 0 80px 0;
+    }
+    @media (max-width: 640px){
+      padding: 0 0 80px 0;
     }
 
     .banner-block__title {
@@ -302,7 +278,6 @@
     }
 
     .banner-block__text {
-      color: #737373;
       font-size: 24px;
       line-height: 120.83%;
       max-width: 532px;
@@ -314,6 +289,9 @@
       @media (max-width: 767px){
         font-size: 18px;
         max-width: 460px;
+      }
+      @media (max-width: 640px){
+        max-width: 340px;
       }
     }
 
@@ -364,6 +342,10 @@
     top: -90px;
     right: -80px;
     z-index: 1;
+
+    @media (max-width: 620px) {
+      opacity: 0.7;
+    }
 
 
 
@@ -538,17 +520,7 @@
         background: url("/img/aboutUs/bg_2.png") bottom no-repeat;
         background-size: contain;
 
-        //.text-last__bg {
-        //  position: absolute;
-        //  max-width: 547px;
-        //  max-height: 256px;
-        //  bottom: 0;
-        //  left: 0;
-        //
-        //  & img {
-        //    width: 100%;
-        //  }
-        //}
+
         .text-last{
           position: absolute;
           max-width: 460px;
