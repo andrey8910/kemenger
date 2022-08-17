@@ -10,12 +10,12 @@ headerBurger.addEventListener("click", function() {
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let btn = document.querySelectorAll(".hidden_btn");
-console.log(btn)
+let btn = document.querySelectorAll(".hidden_bn");
+//console.log(btn)
 btn.forEach((element) => {
 
     element.addEventListener("click", e =>{
-            console.log(e);
+            console.log(e.target);
 
     })
 
