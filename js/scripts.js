@@ -10,12 +10,24 @@ headerBurger.addEventListener("click", function() {
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let btn = document.querySelectorAll(".hidden_bn");
-//console.log(btn)
+let btn = document.querySelectorAll(".hidden_btn");
+console.log(btn)
 btn.forEach((element) => {
 
     element.addEventListener("click", e =>{
-            console.log(e.target);
+        console.log(e.target.innerHTML)
+        let hiddenButton = e.target;
+        let hiddenBlock = e.target.parentElement.getElementsByClassName("hidden")[0];
+            //console.log(e.target.parentElement.getElementsByClassName("hidden")[0]);
+
+        if (hiddenBlock.style.display === "" || hiddenBlock.style.display === "none"){
+            hiddenBlock.style.display = "inline";
+            hiddenButton.innerHTML = "скрыт";
+        } else {
+            hiddenBlock.style.display = "none";
+            hiddenButton.innerHTML = "Подробнее ...";
+        }
+
 
     })
 

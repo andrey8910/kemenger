@@ -772,13 +772,34 @@
 .catalog .catalog__block .catalog__container .catalog__slider_block .mySwiper .swiper-wrapper .swiper-slide .slide__body .slide__body_items .hidden {
   display: none;
 }
-.catalog .catalog__block .catalog__container .catalog__slider_block .mySwiper .swiper-wrapper .swiper-slide .slide__body .slide__body_items .hidden_bn {
-  width: 300px;
-  height: 50px;
+.catalog .catalog__block .catalog__container .catalog__slider_block .mySwiper .swiper-wrapper .swiper-slide .slide__body .slide__body_items .hidden_btn {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.35px;
+  color: #018FA3;
+  background-color: #fff;
+  border: 0;
+  padding: 0;
+}
+.catalog .catalog__block .catalog__container .catalog__slider_block .mySwiper .swiper-wrapper .swiper-slide .slide__body .slide__body_items .hidden_btn:hover {
+  cursor: pointer;
 }
 .catalog .catalog__block .catalog__container .catalog__slider_block .mySwiper .swiper-wrapper .swiper-slide .slide__btn-block {
   height: 128px;
-  background-color: #018FA3;
+  display: flex;
+  justify-content: center;
+}
+.catalog .catalog__block .catalog__container .catalog__slider_block .mySwiper .swiper-wrapper .swiper-slide .slide__btn-block .slide__button {
+  display: flex;
+  height: 58px;
+  padding: 20px 60px;
+  align-items: center;
+  border-radius: 40px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.35px;
 }
 
 .certificates {
