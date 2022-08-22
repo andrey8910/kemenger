@@ -1030,4 +1030,27 @@
   height: 51px;
 }
 
+.scrollToUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #018FA3;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+  color: #fff;
+  vertical-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 30px;
+  z-index: 1000;
+}
+
+.scrollToUp--active {
+  opacity: 0.8;
+  visibility: visible;
+}
+
 /*# sourceMappingURL=main.css.map */

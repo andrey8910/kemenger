@@ -9,12 +9,16 @@ headerBurger.addEventListener("click", function() {
     headerMenu.classList.toggle('active');
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//const q = document.querySelectorAll('*');
+//q.forEach(el => el.addEventListener( "click", e => console.log(e.target)));
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 let btn = document.querySelectorAll(".hidden_btn");
-console.log(btn)
-btn.forEach((element) => {
 
+btn.forEach((element) => {
+    
     element.addEventListener("click", e =>{
+        e.stopPropagation()
         console.log(e.target.innerHTML)
         let hiddenButton = e.target;
         let hiddenBlock = e.target.parentElement.getElementsByClassName("hidden")[0];
@@ -32,6 +36,25 @@ btn.forEach((element) => {
     })
 
 });
+
+//scrollToTop
+const toTopBtn = document.getElementById('scrollToUp')
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 200){
+        toTopBtn.classList.add('scrollToUp--active');
+    }else {
+        toTopBtn.classList.remove('scrollToUp--active');
+    }
+})
+//click
+toTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    })
+})
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
